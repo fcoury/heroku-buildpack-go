@@ -55,8 +55,8 @@ PATH=$GOROOT/bin:$PATH
 
 if ! (which hg > /dev/null && which bzr > /dev/null)
 then
-    echo -n "       Installing pip..."
-    apt-get install -y --force-yes python-pip > /tmp/pip 2>&1
+    echo -n "       Installing python-dev..."
+    apt-get install -y --force-yes python-dev > /tmp/python-dev.log 2>&1
     echo "done"
     
     echo -n "       Installing Virtualenv..."
